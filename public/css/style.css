@@ -1,0 +1,141 @@
+/* Сброс базовых стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0078d4;
+    --secondary-color: #107c10;
+    --danger-color: #d83b01;
+    --light-gray: #f3f2f1;
+    --dark-gray: #323130;
+    --border-radius: 4px;
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #323130;
+    background-color: #f3f2f1;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: var(--dark-gray);
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn.primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn.primary:hover {
+    background-color: #005a9e;
+}
+
+.btn.danger {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.account-card {
+    border: 1px solid #e1dfdd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-card:hover {
+    border-color: var(--primary-color);
+}
+
+.account-info {
+    flex-grow: 1;
+}
+
+.account-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.account-email {
+    color: #605e5c;
+    font-size: 14px;
+}
+
+.file-item {
+    padding: 10px;
+    border-bottom: 1px solid #e1dfdd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-name {
+    font-weight: 500;
+}
+
+.file-actions button {
+    margin-left: 5px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.no-accounts, .loading {
+    color: #605e5c;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}

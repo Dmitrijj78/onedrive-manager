@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneDrive Manager</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>OneDrive Manager</h1>
+        <p>Управление несколькими аккаунтами OneDrive в одном месте</p>
+    </header>
+
+    <main>
+        <section id="account-section">
+            <h2>Мои аккаунты</h2>
+            <div id="accounts-container">
+                <p class="no-accounts">У вас пока нет подключенных аккаунтов</p>
+            </div>
+            <button id="add-account-btn" class="btn primary">+ Добавить аккаунт</button>
+        </section>
+
+        <section id="file-section" style="display: none;">
+            <h2>Файлы аккаунта</h2>
+            <div id="files-container">
+                <p class="loading">Загрузка файлов...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 OneDrive Manager. Все права защищены.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
