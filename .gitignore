@@ -166,3 +166,10 @@ ENV/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Локальные конфигурационные файлы
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local.env
